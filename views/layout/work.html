@@ -1,0 +1,29 @@
+<section class="work-container" ng-controller="WorkController as work">
+	<menu></menu>
+	<div class="content">
+		<h1>Ammattikunnat</h1>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Otsikko otsikko</h3>
+			</div>
+			<div class="panel-body">
+				<p>Tähän tulee tekstiä...</p>
+				<img src="images/vanha-vaasan-kirkko.jpg" alt="Kirkon historia" class="" />
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Otsikko otsikko 2</h3>
+			</div>
+			<div class="panel-body">
+				<p>Lorem ipsum</p>
+			</div>
+		</div>
+
+		<button type="button" class="btn btn-primary btn-lg btn-task" ng-click="work.openTasks()">
+			<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Tehtäviä
+		</button>
+	</div>
+</section>

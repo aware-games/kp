@@ -1,0 +1,33 @@
+@import "global.scss";
+@import "responsive.scss";
+
+.history-container {
+	width: 100%;
+	
+	.content {
+		@include centeredcontainer();
+		padding: 20px 50px;
+	}
+	
+	p {
+		margin: 1em 0 0.5em 0;
+	}
+	
+	.btn-bar {
+		margin-top: 20px;
+	}
+	
+	.timeline-wrapper {
+		margin-top: 50px;
+		
+		timeline {
+			timeline-badge {
+				cursor: pointer;
+			}
+	
+			timeline-panel {
+				
+			}
+		}
+	}
+}

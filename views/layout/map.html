@@ -1,0 +1,9 @@
+<section class="map-container" ng-controller="MapController as map">
+	<menu></menu>
+	
+	<ng-map id="history-map" lazy-init="true" class="map" center="{{map.center}}" zoom="{{map.zoom}}">
+		<marker ng-repeat="(id, m) in map.markers" position="{{m.pos}}"
+			data-id="{{id}}" title="{{m.title}}" class="marker" click="map.test()"></marker>
+		<!--marker position="current-position" title="You are here"></marker-->
+	</ng-map>
+</section>

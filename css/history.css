@@ -1,0 +1,28 @@
+/* line 4, ../scss/history.scss */
+.history-container {
+  width: 100%;
+}
+/* line 7, ../scss/history.scss */
+.history-container .content {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 50px;
+}
+/* line 12, ../scss/history.scss */
+.history-container p {
+  margin: 1em 0 0.5em 0;
+}
+/* line 16, ../scss/history.scss */
+.history-container .btn-bar {
+  margin-top: 20px;
+}
+/* line 20, ../scss/history.scss */
+.history-container .timeline-wrapper {
+  margin-top: 50px;
+}
+/* line 24, ../scss/history.scss */
+.history-container .timeline-wrapper timeline timeline-badge {
+  cursor: pointer;
+}

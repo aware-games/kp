@@ -1,0 +1,64 @@
+@import "layout.scss";
+
+.main-container {
+	background-image: url(../images/background-main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	flex: 1 0 auto;
+	
+	.layout {
+		@include flexbox(row);
+		height: 100vh;
+		
+		.column {
+			width: 33.3%;
+			flex: 0 1 auto;
+			
+			.btn-container {
+				@include flexbox(column);
+				@include calc('height', '94vh - 0px');
+				height: calc(88vh - 0px);
+				justify-content: space-between;
+				margin: 10% 0;
+			}
+			
+			&.left {
+				@include order(1);
+				margin-left: 7.5%;
+				
+				.btn-container {
+					align-items: flex-start;
+				}
+			}
+			&.middle {
+				@include order(2);
+				
+				.btn-container {
+					align-items: center;
+				}
+			}
+			&.right {
+				@include order(3);
+				margin-right: 7.5%;
+				
+				.btn-container {
+					align-items: flex-end;
+				}
+			}
+			
+			button.frontpage {
+				min-height: 12.5%;
+				width: 80%;
+				max-width: 200px;
+				@include hyphenate;
+			}
+		}
+	}
+	
+	.hidden {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}

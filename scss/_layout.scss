@@ -1,0 +1,12 @@
+//@import "compass/reset";
+
+@import "global.scss";
+@import "responsive.scss";
+@import "menu.scss";
+@import "typography.scss";
+
+.view-container {
+	@include centeredcontainer;
+	@include flexbox(row);
+	height: 100vh;
+}

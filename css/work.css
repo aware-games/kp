@@ -1,0 +1,39 @@
+/* line 4, ../scss/work.scss */
+.work-container {
+  width: 100%;
+}
+/* line 7, ../scss/work.scss */
+.work-container .content {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 50px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 13, ../scss/work.scss */
+.work-container .content h1 {
+  margin-bottom: 1em;
+  flex: 1 0 auto;
+  width: 100%;
+}
+/* line 19, ../scss/work.scss */
+.work-container .content .panel {
+  width: calc(50% - 20px);
+  flex: 0 1 auto;
+  margin: 0 10px;
+}
+/* line 24, ../scss/work.scss */
+.work-container .content .panel img {
+  max-width: 100%;
+}
+/* line 29, ../scss/work.scss */
+.work-container .content .btn-task {
+  margin-top: 20px;
+}

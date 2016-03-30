@@ -1,0 +1,101 @@
+/* line 1, ../scss/_menu.scss */
+menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, ../scss/_layout.scss */
+.view-container {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* line 3, ../scss/main.scss */
+.main-container {
+  background-image: url(../images/background-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex: 1 0 auto;
+}
+/* line 11, ../scss/main.scss */
+.main-container .layout {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+/* line 15, ../scss/main.scss */
+.main-container .layout .column {
+  width: 33.3%;
+  flex: 0 1 auto;
+}
+/* line 19, ../scss/main.scss */
+.main-container .layout .column .btn-container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  height: calc(88vh - 0px);
+  justify-content: space-between;
+  margin: 10% 0;
+}
+/* line 27, ../scss/main.scss */
+.main-container .layout .column.left {
+  order: 1;
+  margin-left: 7.5%;
+}
+/* line 31, ../scss/main.scss */
+.main-container .layout .column.left .btn-container {
+  align-items: flex-start;
+}
+/* line 35, ../scss/main.scss */
+.main-container .layout .column.middle {
+  order: 2;
+}
+/* line 38, ../scss/main.scss */
+.main-container .layout .column.middle .btn-container {
+  align-items: center;
+}
+/* line 42, ../scss/main.scss */
+.main-container .layout .column.right {
+  order: 3;
+  margin-right: 7.5%;
+}
+/* line 46, ../scss/main.scss */
+.main-container .layout .column.right .btn-container {
+  align-items: flex-end;
+}
+/* line 51, ../scss/main.scss */
+.main-container .layout .column button.frontpage {
+  min-height: 12.5%;
+  width: 80%;
+  max-width: 200px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+/* line 60, ../scss/main.scss */
+.main-container .hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

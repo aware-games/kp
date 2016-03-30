@@ -1,0 +1,39 @@
+<section class="history-container" ng-controller="HistoryController as history">
+	<menu></menu>
+	<div class="content">
+		<h1>Vaasan historia</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras magna leo, rhoncus eu condimentum malesuada, fermentum vitae ipsum. Nulla egestas dictum auctor. Duis consectetur turpis nulla. Proin at ipsum at velit volutpat mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce nunc purus, euismod malesuada risus sit amet, consequat dapibus erat.</p>
+
+		<div class="btn-bar" ng-show="history.showBlock == 'buttons'">
+			<button type="button" class="btn btn-primary btn-lg" ng-click="history.openTimeline()">
+				<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Näytä aikajana
+			</button>
+			
+			<button type="button" class="btn btn-primary btn-lg" ng-click="history.openTasks()">
+				<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Tehtäviä
+			</button>
+		</div>
+
+		<div class="timeline-wrapper" ng-show="history.showBlock == 'timeline'">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"
+				ng-click="history.closeTimeline()" ng-show="false">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<timeline>
+				<timeline-event ng-repeat="event in history.events" side="{{($index % 2 === 0) && 'right' || 'left'}}">
+					<timeline-badge class="{{event.badgeClass}}" ng-click="history.showInfo(event, $index)">
+						<i class="glyphicon {{event.badgeIconClass}}"></i>
+					</timeline-badge>
+					<timeline-panel class="{{event.badgeClass}}" id="timeline-panel{{$index}}"
+						ng-show="event.visible">
+						<timeline-heading>
+							<i class="glyphicon glyphicon-time"></i> {{event.date}}
+							<h4>{{event.title}}</h4>
+						</timeline-heading>
+						<p>{{event.content}}</p>
+					</timeline-panel>
+				</timeline-event>
+			</timeline>
+		</div>
+	</div>
+</section>

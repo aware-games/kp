@@ -1,0 +1,38 @@
+<section class="main-container">
+	<div class="layout">
+		<div class="left column">
+			<div class="btn-container">
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('historia')">
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Historia
+				</button>
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('ammattikunnat')">
+					<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Ammattikunnat
+				</button>
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('video')">
+					<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Video
+				</button>
+			</div>
+		</div>
+		<div class="middle column">
+			<div class="btn-container">
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('arki')">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"></span> Arkipäivä
+				</button>
+			</div>
+		</div>
+		<div class="right column">
+			<div class="btn-container">
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('kartta')">
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Kartta
+				</button>
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('audio')">
+					<span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Todistajan lausunto
+				</button>
+				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('copyright')">
+					<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Copyright
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="page-loading">Loading...</div>
+</section>
