@@ -7,27 +7,85 @@
 	.content {
 		@include centeredcontainer();
 		padding: 20px 50px;
-	}
-	
-	p {
-		margin: 1em 0 0.5em 0;
+		
+		h1 {
+			margin-top: 0;
+		}
+		
+		p {
+			margin: 1em 0 0.5em 0;
+		}
 	}
 	
 	.btn-bar {
-		margin-top: 20px;
+		margin-top: 40px;
+		text-align: center;
+		margin: 40px auto 0 auto;
+		width: 320px;
+		
+		button {
+			margin-top: 25px;
+			width: 100%;
+			height: 70px;
+		}
 	}
 	
-	.timeline-wrapper {
-		margin-top: 50px;
+	.subview-container {
+		margin-top: 20px;
+		text-align: right;
+		
+		button.close {
+			display: inline-block;
+			padding: 0 20px;
+			float: none;
+		}
 		
 		timeline {
-			timeline-badge {
-				cursor: pointer;
+			display: block;
+			margin-top: 20px;
+
+			li {
+				text-align: right;
+				&.timeline-inverted {
+					text-align: left;
+				}
+
+				timeline-badge {
+					cursor: pointer;
+				}
+
+				timeline-panel {
+
+					.timeline-panel {
+						width: 100%;
+					}
+				}
 			}
-	
-			timeline-panel {
-				
+		}
+		
+		church, school {
+			text-align: left;
+			
+			h2 {
+				margin-top: 0;
 			}
+			
+			img {
+				max-width: 50%;
+				margin-left: 10px;
+			}
+		}
+		
+		church {
+			
+		}
+		
+		school {
+			
+		}
+		
+		tasks {
+			text-align: left;
 		}
 	}
 }
