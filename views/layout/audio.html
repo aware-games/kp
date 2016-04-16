@@ -1,5 +1,11 @@
 <section class="audio-container" ng-controller="AudioController as audio">
 	<menu></menu>
-	<h1>Todistajan lausunto</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras magna leo, rhoncus eu condimentum malesuada, fermentum vitae ipsum. Nulla egestas dictum auctor. Duis consectetur turpis nulla. Proin at ipsum at velit volutpat mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce nunc purus, euismod malesuada risus sit amet, consequat dapibus erat.</p>
+	<div class="content">
+		<h1>Todistajan lausunto</h1>
+		
+		<audiocell header="Piga" ctrl="audio" cid="1" audio="piga" style="top: 100px;"></audiocell>
+		<audiocell header="Lassel" ctrl="audio" cid="2" audio="lassel" style="top: 100px; right: 50px;"></audiocell>
+		<audiocell header="Aspelin" ctrl="audio" cid="3" audio="aspelin" style="bottom: 100px;"></audiocell>
+		<audiocell header="Vöråbo" ctrl="audio" cid="4" audio="vora" style="bottom: 100px; right: 50px"></audiocell>
+	</div>
 </section>

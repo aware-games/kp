@@ -4,7 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 1, ../scss/_menu.scss */
 menu {
-  width: 100vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* line 8, ../scss/_layout.scss */

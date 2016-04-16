@@ -1,6 +1,6 @@
 /* line 1, ../scss/_menu.scss */
 menu {
-  width: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }

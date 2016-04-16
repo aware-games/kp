@@ -1,0 +1,40 @@
+@import "global.scss";
+@import "responsive.scss";
+
+.audio-container {
+	width: 100%;
+	
+	.content {
+		@include centeredcontainer();
+		padding: 20px 50px;
+		height: 100%;
+		position: relative;
+		
+		background-image: url(../images/kartta.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		
+		h1 {
+			margin-top: 0;
+		}
+		
+		p {
+			margin: 1em 0 0.5em 0;
+		}
+		
+		audiocell {
+			width: 33.3%;
+			position: absolute;
+			
+			h2 a { color: inherit; text-align: center; }
+			h2 a:hover { text-decoration: none; }
+			
+			.collapse { margin-top: 30px; }
+			
+			.input-group-addon.fixed-width {
+				min-width: 61px;
+			}
+		}
+	}
+}
