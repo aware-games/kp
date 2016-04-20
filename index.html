@@ -2,15 +2,60 @@
 <html ng-app="kp-app">
 	<head>
 		<title>Kulttuuripolku - webapp</title>
+
 		<meta charset="UTF-8" />
-		<meta name="description" content="Simple Map" />
-		<meta name="keywords" content="ng-map,AngularJS,center" />
+		<meta name="description" content="Kulttuuripolku - webapp" />
+		<meta name="keywords" content="kulttuuripolku,webapp,AngularJS" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		
+		<!-- Disable tap highlight on IE -->
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<!-- Web application manifest -->
+		<link type="application/x-web-app-manifest+json" rel="manifest" href="manifest.json">
+		
+		<!-- Add to homescreen for Chrome on Android (<39) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Kulttuuripolku">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="194x194" href="images/icons/favicon-194x194.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-chrome-192x192.png">
+		
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Kulttuuripolku">
+		<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="images/icons/apple-touch-icon-192x192.png">
+		
+		<!-- Mac OS Safari pinned tab icon -->
+		<link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+		
+		<!-- Tile icon for Windows 8+ (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png">
+		<meta name="msapplication-TileColor" content="#482323">
+		
+		<!-- Color the status bar on mobile devices -->
+		<meta name="theme-color" content="#2F3BA">
+
+		<!-- Dependency stylesheets -->
 		<link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 		<link type="text/css" rel="stylesheet" href="node_modules/angular-loading-bar/build/loading-bar.min.css"  media="all" />
 		<link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" media="all" />
 		<link type="text/css" rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline.css"/>
 		<link type="text/css" rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline-bootstrap.css" />
+
+		<!-- App stylesheets -->
 		<link type="text/css" rel="stylesheet" media="screen, projection" rel="stylesheet" href="css/screen.css" />
 		<link type="text/css" rel="stylesheet" media="print" rel="stylesheet" href="css/print.css" />
 		<link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -18,6 +63,8 @@
 		<!--[if IE]>
 			<link type="text/css" rel="stylesheet" media="screen, projection" href="css/ie.css" />
 		<![endif]-->
+
+		<!-- Dependency scripts -->
 		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
@@ -28,6 +75,8 @@
 		<script type="text/javascript" src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
 		<script type="text/javascript" src="bower_components/angular-audio/app/angular.audio.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBdlQZcIfg5IXbV6vDGLvHejWCFNJx6g-s"></script>
+
+		<!-- App scripts -->
 		<script type="text/javascript" src="modules/kp-modules.js"></script>
 		<script type="text/javascript" src="controllers/audio.js"></script>
 		<script type="text/javascript" src="controllers/copyright.js"></script>
