@@ -9,74 +9,147 @@
   margin-left: auto;
   margin-right: auto;
   padding: 20px 50px;
+  min-height: calc(100vh - 40px);
+  background-image: url(../images/background-main3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-/* line 11, ../scss/history.scss */
+/* line 18, ../scss/history.scss */
 .history-container .content h1 {
   margin-top: 0;
 }
-/* line 15, ../scss/history.scss */
+/* line 22, ../scss/history.scss */
 .history-container .content p {
   margin: 1em 0 0.5em 0;
 }
-/* line 20, ../scss/history.scss */
+/* line 27, ../scss/history.scss */
 .history-container .btn-bar {
-  margin-top: 40px;
   text-align: center;
-  margin: 40px auto 0 auto;
-  width: 320px;
 }
-/* line 26, ../scss/history.scss */
+/* line 30, ../scss/history.scss */
 .history-container .btn-bar button {
-  margin-top: 25px;
-  width: 100%;
-  height: 70px;
+  width: 18%;
+  min-width: 170px;
+  min-height: 10%;
+  position: absolute;
 }
-/* line 33, ../scss/history.scss */
+/* line 36, ../scss/history.scss */
+.history-container .btn-bar button.left {
+  left: 11.5%;
+}
+/* line 39, ../scss/history.scss */
+.history-container .btn-bar button.middle {
+  left: calc(50% - 9%);
+}
+@media screen and (max-width: 600px) {
+  /* line 39, ../scss/history.scss */
+  .history-container .btn-bar button.middle {
+    left: calc(50% - 85px);
+  }
+}
+/* line 43, ../scss/history.scss */
+.history-container .btn-bar button.right {
+  right: 11.5%;
+}
+/* line 46, ../scss/history.scss */
+.history-container .btn-bar button.top {
+  top: 17.5%;
+}
+/* line 49, ../scss/history.scss */
+.history-container .btn-bar button.center {
+  top: calc(50% - 5%);
+}
+/* line 52, ../scss/history.scss */
+.history-container .btn-bar button.bottom {
+  bottom: 15%;
+}
+/* line 58, ../scss/history.scss */
 .history-container .subview-container {
   margin-top: 20px;
   text-align: right;
 }
-/* line 37, ../scss/history.scss */
+/* line 62, ../scss/history.scss */
 .history-container .subview-container button.close {
   display: inline-block;
   padding: 0 20px;
   float: none;
 }
-/* line 43, ../scss/history.scss */
+/* line 68, ../scss/history.scss */
+.history-container .subview-container h2 {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  /* line 68, ../scss/history.scss */
+  .history-container .subview-container h2 {
+    text-align: left;
+  }
+}
+/* line 74, ../scss/history.scss */
 .history-container .subview-container timeline {
   display: block;
   margin-top: 20px;
 }
-/* line 47, ../scss/history.scss */
+/* line 78, ../scss/history.scss */
 .history-container .subview-container timeline li {
   text-align: right;
 }
-/* line 49, ../scss/history.scss */
+/* line 80, ../scss/history.scss */
 .history-container .subview-container timeline li.timeline-inverted {
   text-align: left;
 }
-/* line 53, ../scss/history.scss */
-.history-container .subview-container timeline li timeline-badge {
-  cursor: pointer;
+@media screen and (max-width: 767px) {
+  /* line 78, ../scss/history.scss */
+  .history-container .subview-container timeline li {
+    text-align: left !important;
+  }
 }
-/* line 59, ../scss/history.scss */
+/* line 89, ../scss/history.scss */
 .history-container .subview-container timeline li timeline-panel .timeline-panel {
   width: 100%;
 }
-/* line 66, ../scss/history.scss */
-.history-container .subview-container church, .history-container .subview-container school {
+/* line 96, ../scss/history.scss */
+.history-container .subview-container .church, .history-container .subview-container .school {
   text-align: left;
 }
-/* line 69, ../scss/history.scss */
-.history-container .subview-container church h2, .history-container .subview-container school h2 {
+/* line 99, ../scss/history.scss */
+.history-container .subview-container .church h2, .history-container .subview-container .school h2 {
   margin-top: 0;
+  text-align: left;
 }
-/* line 73, ../scss/history.scss */
-.history-container .subview-container church img, .history-container .subview-container school img {
-  max-width: 50%;
+/* line 104, ../scss/history.scss */
+.history-container .subview-container .church img, .history-container .subview-container .school img {
+  max-width: 40%;
   margin-left: 10px;
 }
-/* line 87, ../scss/history.scss */
+@media screen and (max-width: 1300px) {
+  /* line 104, ../scss/history.scss */
+  .history-container .subview-container .church img, .history-container .subview-container .school img {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  /* line 104, ../scss/history.scss */
+  .history-container .subview-container .church img, .history-container .subview-container .school img {
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 104, ../scss/history.scss */
+  .history-container .subview-container .church img, .history-container .subview-container .school img {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 104, ../scss/history.scss */
+  .history-container .subview-container .church img, .history-container .subview-container .school img {
+    max-width: 100%;
+    margin-left: 0;
+    float: none !important;
+  }
+}
+/* line 133, ../scss/history.scss */
 .history-container .subview-container tasks {
   text-align: left;
 }

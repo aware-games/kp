@@ -1,0 +1,11 @@
+/* line 1, ../scss/tasks.scss */
+tasks {
+  display: block;
+  padding: 3% 0 0;
+  clear: both;
+}
+/* line 6, ../scss/tasks.scss */
+tasks .btn-nav {
+  display: block;
+  margin-top: 2%;
+}

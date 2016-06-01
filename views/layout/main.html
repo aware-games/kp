@@ -1,37 +1,31 @@
 <section class="main-container">
 	<div class="layout">
-		<div class="left column">
-			<div class="btn-container">
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('historia')">
-					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Historia
-				</button>
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('ammattikunnat')">
-					<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Ammattikunnat
-				</button>
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('video')">
-					<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Video
-				</button>
-			</div>
-		</div>
-		<div class="middle column">
-			<div class="btn-container">
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('arki')">
-					<span class="glyphicon glyphicon-home" aria-hidden="true"></span> Arkipäivä
-				</button>
-			</div>
-		</div>
-		<div class="right column">
-			<div class="btn-container">
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('kartta')">
-					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Kartta
-				</button>
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('audio')">
-					<span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Todistajan lausunto
-				</button>
-				<button type="button" class="btn btn-default frontpage" ng-click="main.showView('copyright')">
-					<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Copyright
-				</button>
-			</div>
-		</div>
+		<button type="button" class="btn frontpage top left" ng-click="main.showView('historia')">
+			Historia
+		</button>
+		<button type="button" class="btn frontpage center left" ng-click="main.showView('ammatteja')">
+			Ammatteja
+		</button>
+		<button type="button" class="btn frontpage bottom middle" ng-click="main.showView('video')">
+			Video
+		</button>
+		<button type="button" class="btn frontpage top right" ng-click="main.showView('kartta')">
+			Kartta
+		</button>
+		<button type="button" class="btn frontpage center right" ng-click="main.showView('audio')">
+			Todistajan lausunto
+		</button>
 	</div>
+	
+	<!-- Change level -->
+	<button id="change-level-btn" class="btn btn-primary btn-lg" type="button" data-toggle="modal"
+			data-target="#level-modal">
+		<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+	</button>
+	
+	<!-- Info -->
+	<button id="show-info-btn" class="btn btn-primary btn-lg" type="button" data-toggle="modal"
+			data-target="#info-modal">
+		<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+	</button>
 </section>

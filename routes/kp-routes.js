@@ -7,19 +7,31 @@
 			controller: 'AudioController'
 		})
 
-		.when('/copyright', {
-			templateUrl: 'views/layout/copyright.html',
-			controller: 'CopyrightController'
-		})
-
-		.when('/arki', {
-			templateUrl: 'views/layout/everyday.html',
-			controller: 'EverydayController'
-		})
-
 		.when('/historia', {
 			templateUrl: 'views/layout/history.html',
-			controller: 'HistoryController'
+			controller: 'HistoryController',
+			resolve: {
+				events: function($http) {
+					return $http.get('assets/history-events.json').then(function(res) {
+						return res.data.events;              
+					});
+				},
+				infoTexts: function($http) {
+					return $http.get('assets/history-infotexts.json').then(function(res) {
+						return res.data;
+					});
+				},
+				images: function($http) {
+					return $http.get('assets/history-images.json').then(function(res) {
+						return res.data;
+					});
+				},
+				questions: function($http) {
+					return $http.get('assets/history-questions.json').then(function(res) {
+						return res.data;
+					});
+				}
+			}
 		})
 
 		.when('/etusivu', {
@@ -37,9 +49,26 @@
 			controller: 'VideoController'
 		})
 
-		.when('/ammattikunnat', {
+		.when('/ammatteja', {
 			templateUrl: 'views/layout/work.html',
-			controller: 'WorkController'
+			controller: 'WorkController',
+			resolve: {
+				infoTexts: function($http) {
+					return $http.get('assets/work-infotexts.json').then(function(res) {
+						return res.data;
+					});
+				},
+				images: function($http) {
+					return $http.get('assets/work-images.json').then(function(res) {
+						return res.data;
+					});
+				},
+				questions: function($http) {
+					return $http.get('assets/work-questions.json').then(function(res) {
+						return res.data;
+					});
+				}
+			}
 		});
 	}]);
 })(routesModule);

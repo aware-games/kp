@@ -6,24 +6,14 @@
 		};
 	});
 	
-	app.directive("church", function() {
-		return {
-			restrict: 'E',
-			templateUrl: "views/includes/church.html"
-		};
-	});
-	
-	app.directive("school", function() {
-		return {
-			restrict: 'E',
-			templateUrl: "views/includes/school.html"
-		};
-	});
-	
 	app.directive("tasks", function() {
 		return {
 			restrict: 'E',
-			templateUrl: "views/includes/tasks.html"
+			templateUrl: "views/includes/tasks.html",
+			scope: {
+				questions: "=",
+				view: "="
+			}
 		};
 	});
 	
@@ -36,7 +26,10 @@
 				ctrl: "=",
 				cid: "=",
 				audio: "="
-			}
+			},
+			controller: [ "$scope", function($scope) {
+				$scope.$emit("render.completed");
+			}]
 		};
 	});
 }(directivesModule));

@@ -1,0 +1,53 @@
+<div ng-controller="TasksController as tasks">
+	<div class="task-container">
+
+		<div ng-show="tasks.isShowing('questions')">
+			<div ng-repeat="(qid, q) in questions"
+					ng-show="tasks.isCurrentQuestion(qid) || tasks.isShowingAllQuestions">
+				<h3>{{q.question}}</h3>
+				<div>
+					<button ng-repeat="(cid, choice) in q.choices" id="{{view}}_{{qid}}_{{cid}}"
+							type="button" class="btn btn-default btn-lg btn-block"
+							ng-click="tasks.checkAnswer(qid, cid)" ng-disabled="tasks.hasAnsweredQuestion(qid)">
+						{{choice}}
+					</button>
+				</div>
+
+				<button ng-if="!tasks.isShowingAllQuestions" type="button"
+						class="btn btn-primary btn-nav pull-left"
+						ng-click="tasks.gotoPreviousQuestion()" ng-disabled="!tasks.canGotoPrevious()">
+					Edellinen kysymys
+				</button>
+				<button ng-if="!tasks.isShowingAllQuestions && tasks.canGotoNext()"
+						ng-disabled="!tasks.hasAnsweredQuestion(qid)"
+						type="button" class="btn btn-primary btn-nav pull-right"
+						ng-click="tasks.gotoNextQuestion()">
+					Seuraava kysymys
+				</button>
+				<button ng-if="!tasks.isShowingAllQuestions && !tasks.canGotoNext()"
+						ng-disabled="!tasks.hasAnsweredQuestion(qid)"
+						type="button" class="btn btn-primary btn-nav pull-right"
+						ng-click="tasks.show('results')">
+					Tarkista tuloksesi
+				</button>
+			</div>
+			
+			<button ng-if="tasks.isShowingAllQuestions" type="button"
+					class="btn btn-primary btn-nav pull-right"
+					ng-click="tasks.reset()">
+				Takaisin alkuun
+			</button>
+		</div>
+		
+		<div ng-show="tasks.isShowing('results')">
+			<div class="alert alert-success lead" role="alert">
+				Tuloksesi on <strong>{{tasks.getScoresheet()}}</strong>
+			</div>
+			<button type="button" class="btn btn-primary btn-nav"
+					ng-click="tasks.show('questions'); tasks.showAllQuestions(true);">
+				Näytä kysymykset
+			</button>
+		</div>
+
+	</div>
+</div>

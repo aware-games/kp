@@ -11,7 +11,7 @@
   padding: 20px 50px;
   height: calc(100vh - 40px);
   position: relative;
-  background-image: url(../images/kartta.jpg);
+  background-image: url(../images/gamla_vasa_1840-tal.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -26,23 +26,52 @@
 }
 /* line 26, ../scss/audio.scss */
 .audio-container .content audiocell {
-  width: 33.3%;
   position: absolute;
+  min-width: 33.3%;
+  max-width: 33.3%;
+  min-height: 10%;
 }
-/* line 30, ../scss/audio.scss */
+@media screen and (max-width: 600px) {
+  /* line 26, ../scss/audio.scss */
+  .audio-container .content audiocell {
+    max-width: calc(100% - 100px);
+  }
+}
+/* line 34, ../scss/audio.scss */
+.audio-container .content audiocell.top {
+  top: 6%;
+}
+/* line 37, ../scss/audio.scss */
+.audio-container .content audiocell.bottom {
+  bottom: 6%;
+}
+/* line 40, ../scss/audio.scss */
+.audio-container .content audiocell.left {
+  left: 4%;
+}
+/* line 43, ../scss/audio.scss */
+.audio-container .content audiocell.right {
+  right: 4%;
+}
+/* line 47, ../scss/audio.scss */
+.audio-container .content audiocell h2 {
+  width: 100%;
+}
+/* line 48, ../scss/audio.scss */
 .audio-container .content audiocell h2 a {
   color: inherit;
   text-align: center;
+  display: block;
 }
-/* line 31, ../scss/audio.scss */
+/* line 49, ../scss/audio.scss */
 .audio-container .content audiocell h2 a:hover {
   text-decoration: none;
 }
-/* line 33, ../scss/audio.scss */
+/* line 51, ../scss/audio.scss */
 .audio-container .content audiocell .collapse {
   margin-top: 30px;
 }
-/* line 35, ../scss/audio.scss */
+/* line 53, ../scss/audio.scss */
 .audio-container .content audiocell .input-group-addon.fixed-width {
   min-width: 61px;
 }

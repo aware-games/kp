@@ -1,0 +1,138 @@
+{
+	"events": 
+	[
+		{
+			"badgeClass": "info",
+			"badgeIconClass": "glyphicon-info-sign",
+			"title": "",
+			"content": "Maunu Eerikinpoika (ruotsiksi Magnus Eriksson) perustaa tulli- ja kauppapaikan Mustasaaren pitäjään",
+			"date": "1348"
+		},
+		{
+			"badgeClass": "default",
+			"badgeIconClass": "glyphicon-home",
+			"title": "",
+			"content": "Albert Mecklenburgilainen tekee aloitteen Korsholman linnaa varten ja linna rakennetaan",
+			"date": "1360"
+		},
+		{
+			"badgeClass": "default",
+			"badgeIconClass": "glyphicon-pencil",
+			"title": "",
+			"content": "Linnanherra Bo Joninpojan testamentissa mainitaan Korsholman linna kirjallisena ensimmäistä kertaa nimellä Krytzeborg",
+			"date": "1384"
+		},
+		{
+			"badgeClass": "info",
+			"badgeIconClass": "glyphicon-info-sign",
+			"title": "",
+			"content": "Vitaaliveljet herroina Vaasassa",
+			"date": "n. 1390-1399"
+		},
+		{
+			"badgeClass": "success",
+			"badgeIconClass": "glyphicon-king",
+			"title": "",
+			"content": "Kaarle IX perustaa Mustasaaren kaupungin (ruotsiksi Mussar stad)",
+			"date": "1606"
+		},
+		{
+			"badgeClass": "default",
+			"badgeIconClass": "glyphicon-transfer",
+			"title": "",
+			"content": "Mustasaaren kaupungin nimi vaihdetaan Vaasaksi",
+			"date": "1611"
+		},
+		{
+			"badgeClass": "success",
+			"badgeIconClass": "glyphicon-certificate",
+			"title": "",
+			"content": "Vaasasta tuli Vaasan läänin pääkaupunki",
+			"date": "1634"
+		},
+		{
+			"badgeClass": "primary",
+			"badgeIconClass": "glyphicon-education",
+			"title": "",
+			"content": "Triviaalikoulu valmistuu",
+			"date": "1691"
+		},
+		{
+			"badgeClass": "info",
+			"badgeIconClass": "glyphicon-info-sign",
+			"title": "",
+			"content": "Krytzeborg puretaan koska se vaurioitui pahasti isonvihan aikana 1714-1721",
+			"date": "1770"
+		},
+		{
+			"badgeClass": "success",
+			"badgeIconClass": "glyphicon-star",
+			"title": "",
+			"content": "Kustaa III perusti Suomen toisen hovioikeuden Vaasaan",
+			"date": "1776"
+		},
+		{
+			"badgeClass": "info",
+			"badgeIconClass": "glyphicon-info-sign",
+			"title": "",
+			"content": "Rakennetaan uusi satama Palosaarelle",
+			"date": "1789"
+		},
+		{
+			"badgeClass": "warning",
+			"badgeIconClass": "glyphicon-warning-sign",
+			"title": "",
+			"content": "Vaasan taistelu",
+			"date": "25.6.1808"
+		},
+		{
+			"badgeClass": "danger",
+			"badgeIconClass": "glyphicon-fire",
+			"title": "",
+			"content": "Vaasan palo",
+			"date": "3.8.1852"
+		},
+		{
+			"badgeClass": "primary",
+			"badgeIconClass": "glyphicon-map-marker",
+			"title": "",
+			"content": "Muutto uuteen kaupunkiin (Nikolainkaupunkiin)",
+			"date": "1862"
+		},
+		{
+			"badgeClass": "deafult",
+			"badgeIconClass": "glyphicon-road",
+			"title": "",
+			"content": "Ensimmäinen juna Vaasaan",
+			"date": "1862"
+		},
+		{
+			"badgeClass": "info",
+			"badgeIconClass": "glyphicon-info-sign",
+			"title": "",
+			"content": "Vaskiluodon satama valmistuu",
+			"date": "1893"
+		},
+		{
+			"badgeClass": "primary",
+			"badgeIconClass": "glyphicon-flag",
+			"title": "",
+			"content": "Suomi itsenäistyi",
+			"date": "6.12.1917"
+		},
+		{
+			"badgeClass": "default",
+			"badgeIconClass": "glyphicon-transfer",
+			"title": "",
+			"content": "Nikolainkaupungin nimi muutetaan takaisin Vaasaksi",
+			"date": "1917"
+		},
+		{
+			"badgeClass": "success",
+			"badgeIconClass": "glyphicon-certificate",
+			"title": "",
+			"content": "Vaasa oli Suomen pääkaupunkina 3 kuukautta Suomen sisällissodan aikana",
+			"date": "1918"
+		}
+	]
+}

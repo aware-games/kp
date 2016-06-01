@@ -4,12 +4,30 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 1, ../scss/_menu.scss */
 menu {
-  width: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
 
-/* line 8, ../scss/_layout.scss */
+@media screen and (orientation: portrait) {
+  /* line 8, ../scss/_layout.scss */
+  #orientation-error {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: 10vw;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 8, ../scss/_layout.scss */
+  #orientation-error {
+    display: none;
+  }
+}
+
+/* line 22, ../scss/_layout.scss */
 .view-container {
   width: 100%;
   max-width: 1920px;
@@ -22,4 +40,43 @@ menu {
   display: flex;
   flex-direction: row;
   height: 100vh;
+}
+@media screen and (orientation: portrait) {
+  /* line 22, ../scss/_layout.scss */
+  .view-container {
+    display: none;
+  }
+}
+
+/* line 33, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper, #info-modal .vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  /* This makes sure that we can still click outside of the modal to close it */
+}
+/* line 39, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper .vertical-align-center, #info-modal .vertical-alignment-helper .vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+/* line 45, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper .vertical-align-center.modal-sm, #info-modal .vertical-alignment-helper .vertical-align-center.modal-sm {
+  width: 300px !important;
+}
+/* line 47, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper .vertical-align-center .modal-content, #info-modal .vertical-alignment-helper .vertical-align-center .modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+}
+/* line 58, ../scss/_layout.scss */
+#level-modal .modal-header, #level-modal .modal-footer, #info-modal .modal-header, #info-modal .modal-footer {
+  text-align: center;
 }

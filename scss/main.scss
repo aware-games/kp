@@ -9,56 +9,70 @@
 	flex: 1 0 auto;
 	
 	.layout {
-		@include flexbox(row);
 		height: 100vh;
-		
-		.column {
-			width: 33.3%;
-			flex: 0 1 auto;
+		position: relative;
+
+		.btn {
+			position: absolute;
+			box-shadow: 0px 2px 5px 3px #1E1D1D;
+			background-color: #002b50;
+			border-color: #003563;
+			color: #C6C1C1;
+			font-size: 20px;
 			
-			.btn-container {
-				@include flexbox(column);
-				@include calc('height', '94vh - 0px');
-				height: calc(88vh - 0px);
-				justify-content: space-between;
-				margin: 10% 0;
+			&:hover {
+				background-color: #001527;
+				border-color: #00213E;
 			}
 			
 			&.left {
-				@include order(1);
-				margin-left: 7.5%;
-				
-				.btn-container {
-					align-items: flex-start;
-				}
+				left: 11.5%;
 			}
 			&.middle {
-				@include order(2);
-				
-				.btn-container {
-					align-items: center;
+				left: calc(50% - 100px);
+
+				@media screen and (max-width: 600px) {
+					left: calc(50% - 16.65%);
 				}
 			}
 			&.right {
-				@include order(3);
-				margin-right: 7.5%;
-				
-				.btn-container {
-					align-items: flex-end;
-				}
+				right: 11.5%;
 			}
-			
-			button.frontpage {
-				min-height: 12.5%;
-				width: 80%;
-				max-width: 200px;
-				@include hyphenate;
+			&.top {
+				top: 15%;
 			}
+			&.center {
+				top: calc(50% - 6.25%);
+			}
+			&.bottom {
+				bottom: 15%;
+			}
+		}
+		
+		button.frontpage {
+			min-height: 12.5%;
+			width: 33.3%;
+			max-width: 200px;
+			@include hyphenate;
 		}
 	}
 	
 	.hidden {
 		display: none !important;
 		visibility: hidden !important;
+	}
+	
+	#change-level-btn {
+		position: absolute;
+		bottom: 4%;
+		right: 0;
+		border-radius: 6px 0 0 6px;
+	}
+	
+	#show-info-btn {
+		position: absolute;
+		bottom: 4%;
+		left: 0;
+		border-radius: 0 6px 6px 0;
 	}
 }

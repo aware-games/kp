@@ -3,8 +3,27 @@
 .map-container {
 	flex: 1 0 auto;
 	
-	.map {
-		@include calc('height', '100vh - 40px');
+	.map, .angular-google-map-container {
 		height: calc(100vh - 40px);
+
+		.gm-style-iw div div {
+			max-height: inherit;
+
+			img {
+				max-width: 100%;
+				max-height: inherit;
+			}
+		}
+	}
+	
+	.custom-map-info {
+		display: none;
+		z-index: 100;
+		position: absolute;
+		bottom: 30px;
+		left: 10px;
+		background: white;
+		padding: 10px;
+		box-shadow: 1px 3px 2px 1px;
 	}
 }

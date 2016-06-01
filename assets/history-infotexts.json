@@ -1,0 +1,31 @@
+{
+	"easy": 
+	{
+		"church": 
+		{
+			"title": "Kirkko",
+			"text": "<p>Vaasaan rakennettiin 1500-luvun alussa kivikirkko. Ennen Pyhän Marian kirkkoa nykyisellä Kappelinmäellä lienee sijainnut puukirkko noin 200 vuoden ajan. Kirkkoa suurennettiin ensimmäistä kertaa 1600-luvulla ja toisen kerran 1700-luvulla, jolloin siitä tuli ristikirkko. 1500-luvulla kirkkoon kuului runkohuone, sakaristo, asehuone ja kellotorni. Kirkon torni oli jopa 37,5 metriä korkea.</p><p>Aikaisemmin oli tavallista haudata tärkeitä ihmisiä kirkon lattian alle. Myös Pyhän Marian kirkon lattian alle on haudattu ihmisiä ja vielä tänään voi nähdä laattoja kirkon lattiassa. Laatat olivat hautojen kansia ja niihin kirjoitettiin kuolleiden nimet ja mahdolliset tittelit.</p>"
+		},
+
+		"school": 
+		{
+			"title": "1800-luvun koulu",
+			"text": "<p>Vaasa on aina ollut, ja on edelleen, merkittävä koulukaupunki. Triviaalikoulu, jonka kivijalka on vielä näkyvissä, sijaitsee vielä Vaasassa, mutta Vasa övningsskolana. Triviaalikoulu oli 1800-luvulla aika pieni rakennus. Rakennus oli kaksikerroksinen, mutta sisustusta oli ainoastaan alakerrassa. Alakerrassa oli eteinen, koulusali ja kamari. Rakennus oli laudoitettu ja maalattu punaiseksi vuonna 1780. Koulusali oli 5 kyynärää korkea, 16 kyynärää leveä ja 28 kyynärää pitkä.</p><p>1800-luvulla kirkkoherra toimi koulun johtajana. Opettajien palkka oli huonoa, ja monesta opettajasta tuli myöhemmin pappi. Myös lukio perustettiin Vaasaan 1800-luvulla. Aluksi lukiolla ei ollut omaa rakennusta vaan toimi Wasastjerna-talossa, eli siinä talossa, jossa Vanhan Vaasan museo sijaitsee tänään.</p><p>Koulussa opittiin kristinuskoa, raamatun historiaa, klassisia kieliä kuten latina, kreikka ja heprea, modernia kieliä kuten venäjä, saksa, ranska, ruotsi, aritmetiikkaa, maantietoa, historiaa, logiikkaa, tähtitiedettä, geometriaa, laulua, kirjoittamista ja retoriikkaa. Oppitapana käytettiin ulkolukua, eli kaikki opittavat asiat oli osattava ulkoa.</p>"
+		}
+	},
+
+	"hard": 
+	{
+		"church": 
+		{
+			"title": "Kirkko",
+			"text": "<p>Vaasaan rakennettiin 1500-luvun alussa kivikirkko. Ennen Pyhän Marian kirkkoa nykyisellä Kappelinmäellä lienee sijainnut puukirkko noin 200 vuoden ajan. Kirkkoa suurennettiin ensimmäistä kertaa 1600-luvulla ja toisen kerran 1700-luvulla, jolloin siitä tuli ristikirkko. 1500-luvulla kirkkoon kuului runkohuone, sakaristo, asehuone ja kellotorni. Kirkon torni oli jopa 37,5 metriä korkea.</p><p>Aikaisemmin oli tavallista haudata tärkeitä ihmisiä kirkon lattian alle. Myös Pyhän Marian kirkon lattian alle on haudattu ihmisiä ja vielä tänään voi nähdä laattoja kirkon lattiassa. Laatat olivat hautojen kansia ja niihin kirjoitettiin kuolleiden nimet ja mahdolliset tittelit.</p>"
+		},
+
+		"school": 
+		{
+			"title": "1800-luvun koulu",
+			"text": "<p>Vaasa on aina ollut, ja on edelleen, merkittävä koulukaupunki. Triviaalikoulu, jonka kivijalka on vielä näkyvissä, sijaitsee vielä Vaasassa, mutta Vasa övningsskolana. Triviaalikoulu oli 1800-luvulla aika pieni rakennus. Rakennus oli kaksikerroksinen, mutta sisustusta oli ainoastaan alakerrassa. Alakerrassa oli eteinen, koulusali ja kamari. Rakennus oli laudoitettu ja maalattu punaiseksi vuonna 1780. Koulusali oli 5 kyynärää korkea, 16 kyynärää leveä ja 28 kyynärää pitkä.</p><p>1800-luvulla kirkkoherra toimi koulun johtajana. Opettajien palkka oli huonoa, ja monesta opettajasta tuli myöhemmin pappi. Myös lukio perustettiin Vaasaan 1800-luvulla. Aluksi lukiolla ei ollut omaa rakennusta vaan toimi Wasastjerna-talossa, eli siinä talossa, jossa Vanhan Vaasan museo sijaitsee tänään.</p><p>Koulussa opittiin kristinuskoa, raamatun historiaa, klassisia kieliä kuten latina, kreikka ja heprea, modernia kieliä kuten venäjä, saksa, ranska, ruotsi, aritmetiikkaa, maantietoa, historiaa, logiikkaa, tähtitiedettä, geometriaa, laulua, kirjoittamista ja retoriikkaa. Oppitapana käytettiin ulkolukua, eli kaikki opittavat asiat oli osattava ulkoa.</p>"
+		}
+	}
+}

@@ -10,7 +10,7 @@
 		height: calc(100vh - 40px);
 		position: relative;
 		
-		background-image: url(../images/kartta.jpg);
+		background-image: url(../images/gamla_vasa_1840-tal.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -24,10 +24,28 @@
 		}
 		
 		audiocell {
-			width: 33.3%;
 			position: absolute;
+			min-width: 33.3%;
+			max-width: 33.3%;
+			min-height: 10%;
 			
-			h2 a { color: inherit; text-align: center; }
+			@media screen and (max-width: 600px) { max-width: calc(100% - 100px); }
+			
+			&.top {
+				top: 6%;
+			}
+			&.bottom {
+				bottom: 6%;
+			}
+			&.left {
+				left: 4%;
+			}
+			&.right {
+				right: 4%;
+			}
+			
+			h2 { width: 100%; }
+			h2 a { color: inherit; text-align: center; display: block; }
 			h2 a:hover { text-decoration: none; }
 			
 			.collapse { margin-top: 30px; }

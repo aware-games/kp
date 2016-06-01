@@ -1,0 +1,409 @@
+{
+	"easy": 
+	{
+		"profession": 
+		[
+			{
+				"question": "Mitä ammattikunta teki?",
+				"choices": 
+				[
+					"Keräsi rahaa käsityöläisiltä",
+					"Keksi ammatteja",
+					"Perusti kuntia"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mikä on oppipoika?",
+				"choices": 
+				[
+					"Mestarin oppilas",
+					"Poika, joka käy koulua",
+					"Kirkossa käyvä poika"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Miksi oltiin mestarin oppipoikana?",
+				"choices": 
+				[
+					"Oppiakseen laskemaan",
+					"Oppiakseen ammatti",
+					"Oppiakseen 'Isä meidän'-rukous"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Kuka päätti, että kaupungeissa oli tilaa vielä yhdelle käsityöläiselle?",
+				"choices": 
+				[
+					"Kaupunkilaiset",
+					"Ammattikunnat",
+					"Papit"
+				],
+
+				"correctAnwser": 1
+			}
+		],
+
+		"cobbler": 
+		[
+			{
+				"question": "Mitä suutari teki?",
+				"choices": 
+				[
+					"Nuohosi savupiippuja",
+					"Teki kenkiä",
+					"Paikkasi hampaita"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Miksi 1800-luvulla oli vaikea ansaita tarpeeksi rahaa kenkiä tehdessä?",
+				"choices": 
+				[
+					"Venäläiset toivat kenkiä mukanaan",
+					"Kukaan ei käyttänyt kenkiä",
+					"Venäläiset veivät rahat"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mitä suutarimestarin tuli osata?",
+				"choices": 
+				[
+					"Kiivetä katolle ja nuohota savupiippu",
+					"Tehdä saappaat ja kengät miehelle sekä naiselle",
+					"Tehdä lastenkengät"
+				],
+
+				"correctAnwser": 1
+			}
+		],
+
+		"hatmaker": 
+		[
+			{
+				"question": "Mitä hatuntekijä teki?",
+				"choices": 
+				[
+					"Hattuja",
+					"Hattaraa",
+					"Höyhenpeittoja"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mistä hatut, joita myytiin kaupoissa tuli?",
+				"choices": 
+				[
+					"Ruotsista",
+					"Saksasta",
+					"Venäjältä"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Miksi hatuntekijöiden ammattikunta lakkautettiin?",
+				"choices": 
+				[
+					"Hatuntekijöitä oli liian monta",
+					"Hatuntekijöitä ei ollut tarpeeksi",
+					"Kukaan ei jaksanut kerätä rahaa ammattikuntaan"
+				],
+
+				"correctAnwser": 1
+			}
+		],
+
+		"tailor": 
+		[
+			{
+				"question": "Mitä räätäli teki?",
+				"choices": 
+				[
+					"Vaatteita",
+					"Kenkiä",
+					"Rättejä"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mitä työvälineitä räätälit käyttivät?",
+				"choices": 
+				[
+					"Nauloja ja vasaraa",
+					"Lankaa ja neulaa",
+					"Hitsauskonetta"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Räätälin työnäytteeseen kuului neljä asiaa, mitkä?",
+				"choices": 
+				[
+					"Takin, liivien ja housujen leikkaaminen sekä ompeleminen",
+					"Kengät, saappaat, hattu ja sukat",
+					"Satulan ja satulavyön tekeminen, hevosen satulointi ja satulavyön kiristäminen"
+				],
+
+				"correctAnwser": 0
+			}
+		],
+
+		"blacksmith": 
+		[
+			{
+				"question": "Mitä sepät tekivät?",
+				"choices": 
+				[
+					"Käyttöesineitä",
+					"Kertakäyttöastioita",
+					"Kenkiä"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mitä sepän oli tehtävä ennen kuin hänestä tuli mestari?",
+				"choices": 
+				[
+					"Kengittää hevonen tai tehdä lukko",
+					"Tehdä vetoketjuja",
+					"Ovenkahvoja"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mitä materiaalia sepät käyttivät työssänsä?",
+				"choices": 
+				[
+					"Paperia",
+					"Muovia",
+					"Metallia"
+				],
+
+				"correctAnwser": 2
+			}
+		]
+	},
+
+	"hard": 
+	{
+		"profession": 
+		[
+			{
+				"question": "Mitä ammattikunta teki?",
+				"choices": 
+				[
+					"Varmisti käsitöiden olevan laadullisia",
+					"Päätti, että mestari oli tarpeeksi kokenut tullakseen kisälliksi",
+					"Päätti, että oppipoikia ei enää tarvittu"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Kuka päätti, että kaupungeissa oli tilaa vielä yhdelle käsityöläiselle?",
+				"choices": 
+				[
+					"Kaupunkilaiset",
+					"Ammattikunnat",
+					"Käsityöläiset"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Miksi kaupungeissa ei voinut olla rajaton määrä käsityöläismestareita?",
+				"choices": 
+				[
+					"Ammattikunnilla ei olisi ollut mitään tekemistä",
+					"Käsityöläisille ei olisi riittänyt töitä",
+					"Laadusta olisi tingitty"
+				],
+
+				"correctAnwser": 1
+			}
+		],
+
+		"cobbler": 
+		[
+			{
+				"question": "Mitä tapahtui jos suutari ei pystynyt maksamaan veroja?",
+				"choices": 
+				[
+					"Hänet karkotettiin kaupungista",
+					"Hänen verstaansa poltettiin",
+					"Hän menetti oikeuden kuulua porvaristoon"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Miksi 1800-luvulla oli vaikea ansaita tarpeeksi rahaa kenkiä tehdessä?",
+				"choices": 
+				[
+					"Venäläiset toivat kenkiä Venäjältä ja möivät niitä kaupoissa",
+					"Lasten kenkiä oli vaikea tehdä",
+					"Suutarien ammattikunta lakkautettiin"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mitä suutarimestarin tuli osata?",
+				"choices": 
+				[
+					"Tehdä lastenkengät ja hevosenkengät",
+					"Tehdä saappaat ja kengät miehelle sekä naiselle",
+					"Tehdä juhlakengät naiselle sekä miehelle"
+				],
+
+				"correctAnwser": 1
+			}
+		],
+
+		"hatmaker": 
+		[
+			{
+				"question": "Miksi hatuntekijöiden oli vaikea ansaita yhtä paljon kuin ennen?",
+				"choices": 
+				[
+					"Hattuja tuotiin Suomeen ja niitä ruvettiin myymään kaupoissa",
+					"Kukaan ei enää käyttänyt hattuja",
+					"Hattujen materiaalit olivat kalliimpia"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Mistä hatut, joita myytiin kaupoissa tuli?",
+				"choices": 
+				[
+					"Ruotsista",
+					"Saksasta",
+					"Venäjältä"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Miksi hatuntekijöiden ammattikunta lakkautettiin?",
+				"choices": 
+				[
+					"Hatuntekijöitä oli liian monta",
+					"Hatuntekijöitä ei ollut tarpeeksi",
+					"Kukaan ei jaksanut kerätä rahaa ammattikuntaan"
+				],
+
+				"correctAnwser": 1
+			}
+		],
+
+		"tailor": 
+		[
+			{
+				"question": "Miksi räätälin oli muita käsityöläisiä helpompi muuttaa paikasta toiseen?",
+				"choices": 
+				[
+					"Heidän oli vaikea pysyä paikallaan",
+					"Heillä ei ollut ammattikuntaa",
+					"He pystyivät tekemään töitä missä vain"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Mikä oli räätälille ominaista?",
+				"choices": 
+				[
+					"Haavat käsissä",
+					"Kärsivällisyys",
+					"Äkkipikaisuus"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Räätälin työnäytteeseen kuului neljä asiaa, mitkä?",
+				"choices": 
+				[
+					"Takin, liivien ja housujen leikkaaminen sekä ompeleminen",
+					"Kengät, saappaat, hattu ja sukat",
+					"Satulan ja satulavyön tekeminen, hevosen satulointi ja satulavyön kiristäminen"
+				],
+
+				"correctAnwser": 0
+			}
+		],
+
+		"blacksmith": 
+		[
+			{
+				"question": "Miksi kengittäjillä oli riittävästi töitä?",
+				"choices": 
+				[
+					"Kaikki tarvitsivat kenkiä",
+					"Kaikki liikkuivat jalan tai hevosella",
+					"Seppiä oli liian vähän"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Mitä sepän oli tehtävä ennen kuin hänestä tuli mestari?",
+				"choices": 
+				[
+					"Kengittää hevonen tai tehdä lukko",
+					"Vetoketjuja",
+					"Ovenkahvoja"
+				],
+
+				"correctAnwser": 0
+			},
+
+			{
+				"question": "Miksi sepät eivät tehneet muovisia esineitä?",
+				"choices": 
+				[
+					"Metalli oli halvempaa",
+					"Muovia ei ollut olemassa",
+					"Muovi ei ollut yhtä kestävää kuin metalli"
+				],
+
+				"correctAnwser": 1
+			}
+		]
+	}
+}

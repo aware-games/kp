@@ -1,9 +1,25 @@
 <section class="map-container" ng-controller="MapController as map">
 	<menu></menu>
+	<ui-gmap-google-map center="map.center" zoom="map.zoom" options="map.options">
+		<ui-gmap-marker ng-repeat="(id, m) in map.markers" coords="m.coords" options="m.options"
+						events="m.events" idkey="id">
+			<ui-gmap-window options="m.windowOptions" closeClick="m.closeWindow()">
+                <div>
+                	<img ng-if="m.image != ''" src="images/{{m.image}}" class="img-responsive" alt="" />
+                	<h4>{{m.title}}</h4>
+                	<p>{{m.description}}</p>
+                </div>
+            </ui-gmap-window>
+        </ui-gmap-marker>
+        
+        <ui-gmap-polygon static="true" ng-repeat="p in map.polygons track by p.id" path="p.path"
+        					stroke="p.stroke" visible="p.visible" geodesic="p.geodesic" fit="false"
+        					editable="p.editable" draggable="p.draggable" fill="p.fill"
+        					events="p.events">
+        </ui-gmap-polygon>
+	</ui-gmap-google-map>
 	
-	<ng-map id="history-map" lazy-init="true" class="map" center="{{map.center}}" zoom="{{map.zoom}}">
-		<marker ng-repeat="(id, m) in map.markers" position="{{m.pos}}"
-			data-id="{{id}}" title="{{m.title}}" class="marker" click="map.test()"></marker>
-		<!--marker position="current-position" title="You are here"></marker-->
-	</ng-map>
+	<div class="custom-map-info">
+		<span>Vanha Vaasan koko 1852</span>
+	</div>
 </section>

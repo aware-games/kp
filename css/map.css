@@ -3,6 +3,26 @@
   flex: 1 0 auto;
 }
 /* line 6, ../scss/map.scss */
-.map-container .map {
+.map-container .map, .map-container .angular-google-map-container {
   height: calc(100vh - 40px);
+}
+/* line 9, ../scss/map.scss */
+.map-container .map .gm-style-iw div div, .map-container .angular-google-map-container .gm-style-iw div div {
+  max-height: inherit;
+}
+/* line 12, ../scss/map.scss */
+.map-container .map .gm-style-iw div div img, .map-container .angular-google-map-container .gm-style-iw div div img {
+  max-width: 100%;
+  max-height: inherit;
+}
+/* line 19, ../scss/map.scss */
+.map-container .custom-map-info {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  box-shadow: 1px 3px 2px 1px;
 }

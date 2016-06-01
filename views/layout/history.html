@@ -1,31 +1,31 @@
-<section class="history-container" ng-controller="HistoryController as history">
+<section class="history-container">
 	<menu></menu>
 	<div class="content">
-		<h1>Vaasan historia</h1>
-
 		<div class="btn-bar" ng-show="history.showBlock == 'buttons'">
-			<button type="button" class="btn btn-primary btn-lg" ng-click="history.show('timeline')">
-				<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Näytä aikajana
+			<button type="button" class="btn btn-primary btn-lg top middle" ng-click="history.show('timeline')">
+				Näytä aikajana
 			</button>
 			
-			<button type="button" class="btn btn-primary btn-lg" ng-click="history.show('church')">
-				<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Kirkko
+			<button type="button" class="btn btn-primary btn-lg center left" ng-click="history.show('church')">
+				Kirkko
 			</button>
 			
-			<button type="button" class="btn btn-primary btn-lg" ng-click="history.show('school')">
-				<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 1800-luvun koulu
+			<button type="button" class="btn btn-primary btn-lg center right" ng-click="history.show('school')">
+				1800-luvun koulu
 			</button>
 		</div>
 
-		<div class="subview-container" ng-show="history.showBlock == 'timeline'">
+		<div class="subview-container well clearfix" ng-show="history.showBlock == 'timeline'">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"
 				ng-click="history.show('')">
 				<span aria-hidden="true">&times;</span>
 			</button>
 
+			<h2>Vaasan historia</h2>
 			<timeline>
-				<timeline-event ng-repeat="event in history.events" side="{{($index % 2 === 0) && 'right' || 'left'}}">
-					<timeline-badge class="{{event.badgeClass}}" ng-click="history.showInfo(event, $index)">
+				<timeline-event ng-repeat="event in history.events"
+								side="{{($index % 2 === 0) && 'right' || 'left'}}">
+					<timeline-badge class="{{event.badgeClass}}">
 						<i class="glyphicon {{event.badgeIconClass}}"></i>
 					</timeline-badge>
 					<timeline-panel class="{{event.badgeClass}}" id="timeline-panel{{$index}}">
@@ -37,37 +37,38 @@
 					</timeline-panel>
 				</timeline-event>
 			</timeline>
-
-			<button type="button" class="btn btn-primary btn-lg" ng-click="history.show('tasks')">
-				<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Tehtäviä
-			</button>
 		</div>
 		
-		<div class="subview-container well clearfix" ng-show="history.showBlock == 'church'">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"
+		<div class="subview-container well clearfix" ng-show="history.showBlock == 'church'"
+				ng-init="view = 'church'">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Sulje"
 				ng-click="history.show('')">
 				<span aria-hidden="true">&times;</span>
 			</button>
 			
-			<church></church>
+			<div class="church">
+				<h2>{{history.getInfoText('church').title}}</h2>
+				<img ng-if="history.hasImage('church')" src="images/{{history.getImage('church')}}" alt=""
+						class="pull-right img-thumbnail" />
+				<div ng-bind-html="history.getInfoText('church').text"></div>
+			</div>
+			<tasks questions="history.getQuestions('church')" view="view"></tasks>
 		</div>
 		
-		<div class="subview-container well clearfix" ng-show="history.showBlock == 'school'">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"
+		<div class="subview-container well clearfix" ng-show="history.showBlock == 'school'"
+				ng-init="view2 = 'school'">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Sulje"
 				ng-click="history.show('')">
 				<span aria-hidden="true">&times;</span>
 			</button>
 			
-			<school></school>
-		</div>
-		
-		<div class="subview-container well clearfix" ng-show="history.showBlock == 'tasks'">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"
-				ng-click="history.show('')">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			
-			<tasks></tasks>
+			<div class="school">
+				<h2>{{history.getInfoText('school').title}}</h2>
+				<img ng-if="history.hasImage('school')" src="images/{{history.getImage('school')}}" alt=""
+						class="pull-right" />
+				<div ng-bind-html="history.getInfoText('school').text"></div>
+			</div>
+			<tasks questions="history.getQuestions('school')" view="view2"></tasks>
 		</div>
 	</div>
 </section>

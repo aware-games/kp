@@ -1,0 +1,19 @@
+{
+	"easy": 
+	{
+		"profession": "work-1.jpg",
+		"cobbler": "work-7.jpg",
+		"hatmaker": "work-3.jpg",
+		"tailor": "work-6.jpg",
+		"blacksmith": "work-5.jpg"
+	},
+
+	"hard": 
+	{
+		"profession": "work-1.jpg",
+		"cobbler": "work-7.jpg",
+		"hatmaker": "work-3.jpg",
+		"tailor": "work-6.jpg",
+		"blacksmith": "work-5.jpg"
+	}
+}

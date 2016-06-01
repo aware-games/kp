@@ -1,6 +1,6 @@
 {
 	"short_name":	"Kulttuuripolku",
-	"name":			"Kulttuuripolku - webapp",
+	"name":			"Kulttuuripolku - verkkosovellus",
     "display":      "standalone",
     "orientation":  "landscape",
     "start_url":	"http:\/\/demo.awaregames.fi\/kp",

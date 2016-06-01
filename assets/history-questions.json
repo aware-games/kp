@@ -1,0 +1,163 @@
+{
+	"easy": 
+	{
+		"church": 
+		[
+			{
+				"question": "Miksi kirkosta tehtiin ristikirkko?",
+				"choices": 
+				[
+					"Ristit kuuluvat kristinuskoon",
+					"Kirkkoon tarvittiin lisää hautoja",
+					"Kirkko oli liian pieni"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Ketkä haudattiin kirkkoon?",
+				"choices": 
+				[
+					"Köyhät ihmiset",
+					"Tärkeät ihmiset",
+					"Papit"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Milloin Kappelinmäen puukirkko rakennettiin?",
+				"choices": 
+				[
+					"1300-luvulla",
+					"1400-luvulla",
+					"1500-luvulla"
+				],
+
+				"correctAnwser": 0
+			}
+		],
+
+		"school": 
+		[
+			{
+				"question": "Kuka toimi koulun rehtorina?",
+				"choices": 
+				[
+					"Renki",
+					"Pappi",
+					"Talonpoika"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Mitä koulussa opittiin?",
+				"choices": 
+				[
+					"Venäjää, tanssia ja laskemista",
+					"Tähtitiedettä, retoriikkaa ja hepreaa",
+					"Kiinan kieltä, kristinuskoa ja maantietoa"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Miten asioita opittiin?",
+				"choices": 
+				[
+					"Kirjoittamalla",
+					"Oppimalla ulkoa",
+					"Leikkimällä"
+				],
+
+				"correctAnwser": 1
+			}
+		]
+	},
+
+	"hard": 
+	{
+		"church": 
+		[
+			{
+				"question": "Mikä tarkoitus asehuoneella oli?",
+				"choices": 
+				[
+					"Pappi vastaanotti ihmisiä asehuoneessa",
+					"Aseet jätettiin sinne jumalanpalveluksen ajaksi",
+					"Pappi säilytti aseitansa siellä"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Miksi kirkonlattiassa oli laattoja?",
+				"choices": 
+				[
+					"Laatat olivat koristeita",
+					"Niillä oli sama toiminto kuin hautakivillä nykyään",
+					"Lattiat tehtiin ennen laatoista"
+				],
+
+				"correctAnwser": 1
+			},
+
+			{
+				"question": "Miksi kirkkoa suurennettiin kaksi kertaa?",
+				"choices": 
+				[
+					"Ihmiset halusivat että Vaasassa olisi suuri kirkko",
+					"Kirkon muotoa haluttiin vaihtaa",
+					"Vaasan väestö kasvoi liikaa ja kirkko jäi pieneksi"
+				],
+
+				"correctAnwser": 2
+			}
+		],
+
+		"school": 
+		[
+			{
+				"question": "Jos 1 kyynärä on 0,5 metriä, miten korkea koulurakennus oli?",
+				"choices": 
+				[
+					"5 metriä",
+					"3 metriä",
+					"2,5 metriä"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Mitä koulussa opittiin?",
+				"choices": 
+				[
+					"Kieliä, matematiikkaa ja uskontoa",
+					"Historiaa, biologiaa ja maantiedettä",
+					"Raamatun kieliä, raamatun historiaa ja kirkko-oppia"
+				],
+
+				"correctAnwser": 2
+			},
+
+			{
+				"question": "Miksi triviaalikoulusta on jäljellä vain kivijalka?",
+				"choices": 
+				[
+					"Koska lapset tuhosivat triviaalikoulun",
+					"Triviaalikoulu oli tehty puusta ja tuhoutui palossa",
+					"Koulua ei enää käytetty koska triviaalikoulu siirrettiin Wasastjernan taloon"
+				],
+
+				"correctAnwser": 1
+			}
+		]
+	}
+}

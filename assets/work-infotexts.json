@@ -1,0 +1,67 @@
+{
+	"easy": 
+	{
+		"profession": 
+		{
+			"title": "Ammattikunta",
+			"text": "<p>1800-luvulla kouluttauduttiin hieman eri tavalla kuin nykyään. Jos 1800-luvulla haluttiin kouluttautua johonkin ammattiin sitä tehtiin käytännön työllä, olemalla mestarin oppipoikana noin viisi vuotta. Ammatit usein periytyivät isältä pojalle. Kaupungeissa oppipojan piti antaa työnäyte ennen kuin hänestä tuli kisälli ja vasta noin kolmen kisällivuoden jälkeen kisälli teki mestarinäytteen ja hänestä tuli mestari. Mestari sai pitää omaa verstastansa, jos ammattikunta katsoi, että kaupungissa oli tilaa vielä yhdelle käsityöläismestarille. Ammattikunnat keräsivät käsityöläisiltä maksuja ja päättivät mestaritöiden aiheet. Ne myös hyväksyivät tehdyt näytteet ja oppipoikasopimukset.</p>"
+		},
+
+		"cobbler": 
+		{
+			"title": "Suutarin ammatti",
+			"text": "<p>Suutarin ammattikunta oli Vaasan suurin ammattikunta. Kaikillehan piti tehdä kenkiä. 1800-luvulla suutareiden oli vaikeampi ansaita elantonsa koska venäläiset kilpailivat vaasalaisten suutareiden kanssa ja valmiiden kenkien tuonti kasvoi.</p><p>1800-luvun alkupuolella suutarimestareita oli Vaasassa 48 kappaletta. Suutarin palkka ei ollut häävi. Jos suutari ei pystynyt maksamaan verojansa hän menetti oikeuden kuulua porvaristoon.</p><p>Jos kisälli halusi suutarimestariksi hänen tuli todistaa osaamisensa tekemällä saappaat, miesten kengät sekä naisten kengät.</p>"
+		},
+
+		"hatmaker": 
+		{
+			"title": "Hatuntekijän ammatti",
+			"text": "<p>Hatuntekijän oli Venäjän aikana vaikea ansaita yhtä paljon kuin aikaisemmin tekemällä hattuja. Yksi syy tähän oli se, että venäläiset toivat mukanaan hattuja Venäjältä ja niitä alettiin myymään kaupoissa. Toinen syy oli se, että muoti oli muuttunut, eivätkä ihmiset enää halunneet hattuja.</p><p>Hatuntekijän ammattikunta lakkautettiin koska hatuntekijät vähenivät. Vaasassa oli vuonna 1845 ainoastaan kaksi mestaria ja neljä mestarinleskeä. Keskiverto hatuntekijän vuosipalkka oli noin 80 ruplaa, joka vastaa 1200 euroa.</p>"
+		},
+
+		"tailor": 
+		{
+			"title": "Räätälin ammatti",
+			"text": "<p>Vaasassa oli vuosina 1809-1852 yhteensä 33 räätäliä. Räätälien ammatissa oli helpompi muuttaa paikasta toiseen, joten liikkuvuus erotti räätälit muista käsityöläisistä. Räätälin ammatissa ei saanut kovinkaan paljon rahaa, ja monen räätälin oli vaikea ansaita elantonsa joten he usein tekivät myös jotakin muuta. Kerrotaan, että räätälin ammatti opettaa räätälille kärsivällisyyttä ja rauhallisuutta, on myös todettu, että räätälit eivät kehuskelleet tai tapelleet Vaasassa.</p><p>Räätälin työtä oli helppo tehdä laittomasti. Räätälit tulivat tiloille mukanaan tavallisia, jopa huomaamattomia, työvälineitä, ja kun he olivat työssä oli vaikea sanoa oliko hän ammattikunnan jäsen vai ei. Räätälin mestarinäytteeseen kuului takin, liivien ja housujen leikkaaminen. Räätälikisällin piti sen jälkeen kahdessa viikossa ommella vaatekappaleet valmiiksi. Kaikki mestarit hyväksyttiin siis samojen periaatteiden ja yhtenäisten vaatimustasojen mukaan.</p>"
+		},
+
+		"blacksmith": 
+		{
+			"title": "Sepän ammatti",
+			"text": "<p>Sepät tekivät kaupunkilaisille käyttöesineitä, mutta myös muita metalliesineitä. Ennen kaupungin paloa Vaasassa oli 24 seppää. Sepät jaettiin kahteen ryhmään, kengittäjät, jotka kengittivät hevosen kavioita ja hienotaesepät, jotka tekivät esimerkiksi lukkoja. 1800-luvulla kaikki liikkuivat paikasta toiseen kävellen tai hevosella, joten siksi kengittäjillä riitti töitä. Kengittäjät korjasivat ja tekivät myös esimerkiksi rattaita. Sepät tekivät myös satuloita, vaunuja ja tynnyreitä. Vuonna 1830 vaunusepät saivat oman ammattikuntansa.</p><p>Ennen kuin hienotaesepät hyväksyttiin mestareiksi heiltä usein vaadittiin lukkoa, mutta joskus heidän oli jopa tehtävä englantilaisia saranoita. Kengittäjien tuli kengittää hevonen, mutta joskus heiltä vaadittiin sen lisäksi että he tekisivät reen tai kärrynpyöriä.</p>"
+		}
+	},
+
+	"hard": 
+	{
+		"profession": 
+		{
+			"title": "Ammattikunta",
+			"text": "<p>1800-luvulla kouluttauduttiin hieman eri tavalla kuin nykyään. Jos 1800-luvulla haluttiin kouluttautua johonkin ammattiin sitä tehtiin käytännön työllä, olemalla mestarin oppipoikana noin viisi vuotta. Ammatit usein periytyivät isältä pojalle. Kaupungeissa oppipojan piti antaa työnäyte ennen kuin hänestä tuli kisälli ja vasta noin kolmen kisällivuoden jälkeen kisälli teki mestarinäytteen ja hänestä tuli mestari. Mestari sai pitää omaa verstastansa, jos ammattikunta katsoi, että kaupungissa oli tilaa vielä yhdelle käsityöläismestarille. Ammattikunnat keräsivät käsityöläisiltä maksuja ja päättivät mestaritöiden aiheet. Ne myös hyväksyivät tehdyt näytteet ja oppipoikasopimukset.</p>"
+		},
+
+		"cobbler": 
+		{
+			"title": "Suutarin ammatti",
+			"text": "<p>Suutarin ammattikunta oli Vaasan suurin ammattikunta. Kaikillehan piti tehdä kenkiä. 1800-luvulla suutareiden oli vaikeampi ansaita elantonsa koska venäläiset kilpailivat vaasalaisten suutareiden kanssa ja valmiiden kenkien tuonti kasvoi.</p><p>1800-luvun alkupuolella suutarimestareita oli Vaasassa 48 kappaletta. Suutarin palkka ei ollut häävi. Jos suutari ei pystynyt maksamaan verojansa hän menetti oikeuden kuulua porvaristoon.</p><p>Jos kisälli halusi suutarimestariksi hänen tuli todistaa osaamisensa tekemällä saappaat, miesten kengät sekä naisten kengät.</p>"
+		},
+
+		"hatmaker": 
+		{
+			"title": "Hatuntekijän ammatti",
+			"text": "<p>Hatuntekijän oli Venäjän aikana vaikea ansaita yhtä paljon kuin aikaisemmin tekemällä hattuja. Yksi syy tähän oli se, että venäläiset toivat mukanaan hattuja Venäjältä ja niitä alettiin myymään kaupoissa. Toinen syy oli se, että muoti oli muuttunut, eivätkä ihmiset enää halunneet hattuja.</p><p>Hatuntekijän ammattikunta lakkautettiin koska hatuntekijät vähenivät. Vaasassa oli vuonna 1845 ainoastaan kaksi mestaria ja neljä mestarinleskeä. Keskiverto hatuntekijän vuosipalkka oli noin 80 ruplaa, joka vastaa 1200 euroa.</p>"
+		},
+
+		"tailor": 
+		{
+			"title": "Räätälin ammatti",
+			"text": "<p>Vaasassa oli vuosina 1809-1852 yhteensä 33 räätäliä. Räätälien ammatissa oli helpompi muuttaa paikasta toiseen, joten liikkuvuus erotti räätälit muista käsityöläisistä. Räätälin ammatissa ei saanut kovinkaan paljon rahaa, ja monen räätälin oli vaikea ansaita elantonsa joten he usein tekivät myös jotakin muuta. Kerrotaan, että räätälin ammatti opettaa räätälille kärsivällisyyttä ja rauhallisuutta, on myös todettu, että räätälit eivät kehuskelleet tai tapelleet Vaasassa.</p><p>Räätälin työtä oli helppo tehdä laittomasti. Räätälit tulivat tiloille mukanaan tavallisia, jopa huomaamattomia, työvälineitä, ja kun he olivat työssä oli vaikea sanoa oliko hän ammattikunnan jäsen vai ei. Räätälin mestarinäytteeseen kuului takin, liivien ja housujen leikkaaminen. Räätälikisällin piti sen jälkeen kahdessa viikossa ommella vaatekappaleet valmiiksi. Kaikki mestarit hyväksyttiin siis samojen periaatteiden ja yhtenäisten vaatimustasojen mukaan.</p>"
+		},
+
+		"blacksmith": 
+		{
+			"title": "Sepän ammatti",
+			"text": "<p>Sepät tekivät kaupunkilaisille käyttöesineitä, mutta myös muita metalliesineitä. Ennen kaupungin paloa Vaasassa oli 24 seppää. Sepät jaettiin kahteen ryhmään, kengittäjät, jotka kengittivät hevosen kavioita ja hienotaesepät, jotka tekivät esimerkiksi lukkoja. 1800-luvulla kaikki liikkuivat paikasta toiseen kävellen tai hevosella, joten siksi kengittäjillä riitti töitä. Kengittäjät korjasivat ja tekivät myös esimerkiksi rattaita. Sepät tekivät myös satuloita, vaunuja ja tynnyreitä. Vuonna 1830 vaunusepät saivat oman ammattikuntansa.</p><p>Ennen kuin hienotaesepät hyväksyttiin mestareiksi heiltä usein vaadittiin lukkoa, mutta joskus heidän oli jopa tehtävä englantilaisia saranoita. Kengittäjien tuli kengittää hevonen, mutta joskus heiltä vaadittiin sen lisäksi että he tekisivät reen tai kärrynpyöriä.</p>"
+		}
+	}
+}

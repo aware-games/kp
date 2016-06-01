@@ -1,11 +1,29 @@
 /* line 1, ../scss/_menu.scss */
 menu {
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 8, ../scss/_layout.scss */
+@media screen and (orientation: portrait) {
+  /* line 8, ../scss/_layout.scss */
+  #orientation-error {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: 10vw;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 8, ../scss/_layout.scss */
+  #orientation-error {
+    display: none;
+  }
+}
+
+/* line 22, ../scss/_layout.scss */
 .view-container {
   width: 100%;
   max-width: 1920px;
@@ -19,6 +37,45 @@ menu {
   flex-direction: row;
   height: 100vh;
 }
+@media screen and (orientation: portrait) {
+  /* line 22, ../scss/_layout.scss */
+  .view-container {
+    display: none;
+  }
+}
+
+/* line 33, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper, #info-modal .vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  /* This makes sure that we can still click outside of the modal to close it */
+}
+/* line 39, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper .vertical-align-center, #info-modal .vertical-alignment-helper .vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+/* line 45, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper .vertical-align-center.modal-sm, #info-modal .vertical-alignment-helper .vertical-align-center.modal-sm {
+  width: 300px !important;
+}
+/* line 47, ../scss/_layout.scss */
+#level-modal .vertical-alignment-helper .vertical-align-center .modal-content, #info-modal .vertical-alignment-helper .vertical-align-center .modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+}
+/* line 58, ../scss/_layout.scss */
+#level-modal .modal-header, #level-modal .modal-footer, #info-modal .modal-header, #info-modal .modal-footer {
+  text-align: center;
+}
 
 /* line 3, ../scss/main.scss */
 .main-container {
@@ -30,61 +87,57 @@ menu {
 }
 /* line 11, ../scss/main.scss */
 .main-container .layout {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
   height: 100vh;
+  position: relative;
 }
 /* line 15, ../scss/main.scss */
-.main-container .layout .column {
-  width: 33.3%;
-  flex: 0 1 auto;
+.main-container .layout .btn {
+  position: absolute;
+  box-shadow: 0px 2px 5px 3px #1E1D1D;
+  background-color: #002b50;
+  border-color: #003563;
+  color: #C6C1C1;
+  font-size: 20px;
 }
-/* line 19, ../scss/main.scss */
-.main-container .layout .column .btn-container {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  height: calc(88vh - 0px);
-  justify-content: space-between;
-  margin: 10% 0;
+/* line 23, ../scss/main.scss */
+.main-container .layout .btn:hover {
+  background-color: #001527;
+  border-color: #00213E;
 }
-/* line 27, ../scss/main.scss */
-.main-container .layout .column.left {
-  order: 1;
-  margin-left: 7.5%;
+/* line 28, ../scss/main.scss */
+.main-container .layout .btn.left {
+  left: 11.5%;
 }
 /* line 31, ../scss/main.scss */
-.main-container .layout .column.left .btn-container {
-  align-items: flex-start;
+.main-container .layout .btn.middle {
+  left: calc(50% - 100px);
 }
-/* line 35, ../scss/main.scss */
-.main-container .layout .column.middle {
-  order: 2;
+@media screen and (max-width: 600px) {
+  /* line 31, ../scss/main.scss */
+  .main-container .layout .btn.middle {
+    left: calc(50% - 16.65%);
+  }
 }
 /* line 38, ../scss/main.scss */
-.main-container .layout .column.middle .btn-container {
-  align-items: center;
+.main-container .layout .btn.right {
+  right: 11.5%;
 }
-/* line 42, ../scss/main.scss */
-.main-container .layout .column.right {
-  order: 3;
-  margin-right: 7.5%;
+/* line 41, ../scss/main.scss */
+.main-container .layout .btn.top {
+  top: 15%;
 }
-/* line 46, ../scss/main.scss */
-.main-container .layout .column.right .btn-container {
-  align-items: flex-end;
+/* line 44, ../scss/main.scss */
+.main-container .layout .btn.center {
+  top: calc(50% - 6.25%);
 }
-/* line 51, ../scss/main.scss */
-.main-container .layout .column button.frontpage {
+/* line 47, ../scss/main.scss */
+.main-container .layout .btn.bottom {
+  bottom: 15%;
+}
+/* line 52, ../scss/main.scss */
+.main-container .layout button.frontpage {
   min-height: 12.5%;
-  width: 80%;
+  width: 33.3%;
   max-width: 200px;
   -ms-word-break: break-all;
   word-break: break-all;
@@ -98,4 +151,18 @@ menu {
 .main-container .hidden {
   display: none !important;
   visibility: hidden !important;
+}
+/* line 65, ../scss/main.scss */
+.main-container #change-level-btn {
+  position: absolute;
+  bottom: 4%;
+  right: 0;
+  border-radius: 6px 0 0 6px;
+}
+/* line 72, ../scss/main.scss */
+.main-container #show-info-btn {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  border-radius: 0 6px 6px 0;
 }
