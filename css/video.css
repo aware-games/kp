@@ -1,4 +1,9 @@
 /* line 1, ../scss/video.scss */
+.video-container {
+  width: 100%;
+}
+
+/* line 5, ../scss/video.scss */
 .videogular-container {
   width: 100%;
   height: 320px;
@@ -7,27 +12,27 @@
 }
 
 @media (min-width: 1200px) {
-  /* line 9, ../scss/video.scss */
+  /* line 13, ../scss/video.scss */
   .videogular-container {
     width: 1170px;
     height: 658.125px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 16, ../scss/video.scss */
+  /* line 20, ../scss/video.scss */
   .videogular-container {
     width: 940px;
     height: 528.75px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 23, ../scss/video.scss */
+  /* line 27, ../scss/video.scss */
   .videogular-container {
     width: 728px;
     height: 409.5px;
   }
 }
-/* line 29, ../scss/video.scss */
+/* line 33, ../scss/video.scss */
 .copyright {
   margin-right: 5%;
 }

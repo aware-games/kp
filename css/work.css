@@ -17,7 +17,7 @@
 }
 /* line 11, ../scss/work.scss */
 .work-container .content.has-content {
-  height: unset;
+  height: auto;
   min-height: calc(100vh - 40px);
 }
 /* line 19, ../scss/work.scss */

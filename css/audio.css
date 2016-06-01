@@ -72,6 +72,13 @@
   margin-top: 30px;
 }
 /* line 53, ../scss/audio.scss */
-.audio-container .content audiocell .input-group-addon.fixed-width {
-  min-width: 61px;
+.audio-container .content audiocell .videogular-container {
+  width: 100%;
+  height: 320px;
+  margin: auto;
+  overflow: hidden;
+}
+/* line 60, ../scss/audio.scss */
+.audio-container .content audiocell .videogular-container.audio {
+  height: 50px;
 }

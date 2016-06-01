@@ -7,25 +7,20 @@
 	</h2>
 
 	<div class="collapse" id="audio{{cid}}">
-		<div class="form-group">
-			<button ng-click="audio.paused ? audio.play() : audio.pause()" class="btn btn-primary"
-					ng-disabled="!audio.canPlay" role="button">
-				<i class="fa fa-{{ctrl.getIcon(audio)}} fa-lg" aria-hidden="true"></i>
-			</button>
-			<button ng-click="audio.restart()" class="btn btn-danger" role="button">
-				<i class="fa fa-stop fa-lg" aria-hidden="true"></i>
-			</button>
-		</div>
+		<videogular vg-theme="ctrl.theme.url" class="videogular-container audio">
+			<vg-media vg-src="audio" vg-type="audio"></vg-media>
 
-		<div class="form-group">
-			<div class="input-group">
-				<span class="input-group-addon">
-					<i class="fa fa-clock-o" aria-hidden="true"></i>
-				</span>
-				<input class="form-control" type="range" min="0" max="1" step="0.01"
-					ng-model="audio.progress" />
-				<span class="input-group-addon fixed-width">{{audio.currentTime | number : 1}}</span>
-			</div>
-		</div>
+			<vg-controls>
+				<vg-play-pause-button></vg-play-pause-button>
+				<vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
+				<vg-scrub-bar>
+					<vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+				</vg-scrub-bar>
+				<vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
+				<vg-volume>
+					<vg-mute-button></vg-mute-button>
+				</vg-volume>
+			</vg-controls>
+		</videogular>
 	</div>
 </div>

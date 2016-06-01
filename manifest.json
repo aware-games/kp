@@ -1,9 +1,20 @@
 {
-	"short_name":	"Kulttuuripolku",
-	"name":			"Kulttuuripolku - verkkosovellus",
-    "display":      "standalone",
-    "orientation":  "landscape",
-    "start_url":	"http:\/\/demo.awaregames.fi\/kp",
+	"short_name":		"Kulttuuripolku",
+	"name":				"Kulttuuripolku - verkkosovellus",
+	"description":		"Kulttuuripolku-projektin verkkosovellus",
+    "display":      	"standalone",
+    "orientation":  	"landscape",
+    "version":			"1.0",
+    "manifest_version":	2,
+    "start_url":		"http:\/\/demo.awaregames.fi\/kp",
+    "app": {
+    	"urls": [
+    		"http:\/\/demo.awaregames.fi\/kp"
+    	],
+    	"launch": {
+    		"web_url": "http:\/\/demove.awaregames.fi\/kp"
+    	}
+    },
     "icons": [
 		{
 			"src": "images\/icons\/android-chrome-36x36.png",

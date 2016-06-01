@@ -1,21 +1,28 @@
 (function(module) {
-	module.controller("AudioController", function($scope, cssInjector, ngAudio) {
+	module.controller("AudioController", function($scope, $sce, cssInjector) {
 		var audio = this;
 		
 		cssInjector.add("css/audio.css");
-		
-		$scope.piga = ngAudio.load("audio/piika.mp3");
-		$scope.lassel = ngAudio.load("audio/lassel.mp3");
-		$scope.aspelin = ngAudio.load("audio/aspelin.mp3");
-		$scope.vora = ngAudio.load("audio/voyrilainen.mp3");
-		
-		audio.getIcon = function(audioObj) {
-			if (audioObj.paused) {
-				return "play";
-			}
-			else {
-				return "pause";
-			}
+
+		$scope.piika = [{
+			src : $sce.trustAsResourceUrl("audio/piika.mp3"),
+			type : "audio/mp3"
+		}];
+		$scope.lassel = [{
+			src : $sce.trustAsResourceUrl("audio/lassel.mp3"),
+			type : "audio/mp3"
+		}];
+		$scope.aspelin = [{
+			src : $sce.trustAsResourceUrl("audio/aspelin.mp3"),
+			type : "audio/mp3"
+		}];
+		$scope.vora = [{
+			src : $sce.trustAsResourceUrl("audio/voyrilainen.mp3"),
+			type : "audio/mp3"
+		}];
+
+		audio.theme = {
+			url : "http://www.videogular.com/styles/themes/default/latest/videogular.css"
 		}
 		
 		$scope.$on("render.completed", function() {
