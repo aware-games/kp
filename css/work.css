@@ -22,7 +22,8 @@
 }
 /* line 19, ../scss/work.scss */
 .work-container .content h1 {
-  display: inline-block;
+  /* 			display: inline-block; */
+  display: none;
   position: relative;
   top: calc(50% - 29.8px);
   left: calc(50% - 109.0165px);
@@ -31,73 +32,73 @@
   margin: 0;
   box-shadow: 0px 3px 7px 6px rgba(0, 0, 0, 0.5);
 }
-/* line 30, ../scss/work.scss */
+/* line 31, ../scss/work.scss */
 .work-container .content p {
   margin: 1em 0 0.5em 0;
 }
-/* line 34, ../scss/work.scss */
+/* line 35, ../scss/work.scss */
 .work-container .content .btn-bar {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 39, ../scss/work.scss */
+/* line 40, ../scss/work.scss */
 .work-container .content .btn-bar .btn {
   position: absolute;
   min-width: 18%;
   min-height: 10%;
 }
-/* line 44, ../scss/work.scss */
+/* line 45, ../scss/work.scss */
 .work-container .content .btn-bar .btn.top {
   top: 6%;
 }
-/* line 47, ../scss/work.scss */
+/* line 48, ../scss/work.scss */
 .work-container .content .btn-bar .btn.bottom {
   bottom: 6%;
 }
-/* line 50, ../scss/work.scss */
+/* line 51, ../scss/work.scss */
 .work-container .content .btn-bar .btn.left {
   left: 4%;
 }
-/* line 53, ../scss/work.scss */
+/* line 54, ../scss/work.scss */
 .work-container .content .btn-bar .btn.right {
   right: 4%;
 }
-/* line 56, ../scss/work.scss */
+/* line 57, ../scss/work.scss */
 .work-container .content .btn-bar .btn.middle {
   left: calc(50% - 9%);
 }
-/* line 62, ../scss/work.scss */
+/* line 63, ../scss/work.scss */
 .work-container .content .subview-container {
   display: inline-block;
   margin: 5% 10%;
   max-width: 80%;
 }
-/* line 67, ../scss/work.scss */
+/* line 68, ../scss/work.scss */
 .work-container .content .subview-container img {
   max-width: 40%;
   margin-left: 4%;
 }
 @media screen and (max-width: 1300px) {
-  /* line 67, ../scss/work.scss */
+  /* line 68, ../scss/work.scss */
   .work-container .content .subview-container img {
     max-width: 30%;
   }
 }
 @media screen and (max-width: 1150px) {
-  /* line 67, ../scss/work.scss */
+  /* line 68, ../scss/work.scss */
   .work-container .content .subview-container img {
     max-width: 40%;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 67, ../scss/work.scss */
+  /* line 68, ../scss/work.scss */
   .work-container .content .subview-container img {
     max-width: 50%;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 67, ../scss/work.scss */
+  /* line 68, ../scss/work.scss */
   .work-container .content .subview-container img {
     max-width: 100%;
     margin-left: 0;
