@@ -5,8 +5,8 @@
 						events="m.events" idkey="id">
 			<ui-gmap-window options="m.windowOptions" closeClick="m.closeWindow()">
                 <div>
-                	<img ng-if="m.image != ''" src="images/{{m.image}}" class="img-responsive" alt="" />
                 	<h4>{{m.title}}</h4>
+                	<img ng-if="m.image != ''" src="images/{{m.image}}" class="img-responsive" alt="" />
                 	<p>{{m.description}}</p>
                 </div>
             </ui-gmap-window>

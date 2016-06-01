@@ -5,6 +5,10 @@ tasks {
   clear: both;
 }
 /* line 6, ../scss/tasks.scss */
+tasks .btn-option {
+  white-space: normal;
+}
+/* line 10, ../scss/tasks.scss */
 tasks .btn-nav {
   display: block;
   margin-top: 2%;
