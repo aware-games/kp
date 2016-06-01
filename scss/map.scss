@@ -1,9 +1,9 @@
 @import "responsive.scss";
 
 .map-container {
-	flex: 1 0 auto;
+	flex: 1 0 100%;
 	
-	.map, .angular-google-map-container {
+	.angular-google-map-container {
 		height: calc(100vh - 40px);
 
 		.gm-style-iw div div {
