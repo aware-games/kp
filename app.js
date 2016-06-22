@@ -29,10 +29,17 @@
 		return true;
 //		return window == undefined || window.orientation == undefined ||
 //				window.orientation == 90 || window.orientation == -90;
-	};	
+	};
+	
+	app.disableRightClick = function() {
+		$("body").on("contextmenu", "video, img, .content, .main-container", function(e){
+	        return false;
+	    });
+	};
 	
 	angular.element(document).ready(function() {
 		app.checkLevel();
+		app.disableRightClick();
 	});
 	
 	angular.element(document).bind("orientationchange", function() {

@@ -5,6 +5,10 @@
 @import "menu.scss";
 @import "typography.scss";
 
+img, video, .content, .main-container {
+	-webkit-touch-callout: none
+}
+
 #orientation-error {
 	@media screen and (orientation:portrait) {
 		display: block;

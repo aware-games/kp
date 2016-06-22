@@ -6,7 +6,8 @@
 			<ui-gmap-window options="m.windowOptions" closeClick="m.closeWindow()">
                 <div>
                 	<h4>{{m.title}}</h4>
-                	<img ng-if="m.image != ''" src="images/{{m.image}}" class="img-responsive" alt="" />
+                	<img ng-if="m.image != ''" src="images/{{m.image}}" class="img-responsive" alt=""
+                			oncontextmenu="return false" />
                 	<p>{{m.description}}</p>
                 </div>
             </ui-gmap-window>

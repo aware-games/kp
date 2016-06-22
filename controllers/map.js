@@ -34,8 +34,8 @@
 				visible: false
 			}
 			this.closeWindow = function() {
-	            this.windowOptions.visible = false;
-	        };
+				this.windowOptions.visible = false;
+			};
 		}
 		
 		map.markers = [
